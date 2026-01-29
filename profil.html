@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/css/user/profil.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <img src="assets/img/logo.png" alt="Logo Desa Pesudukuh" class="logo-desa" />
+          <div class="header-text">
+            <span class="desa-title">Pemerintah Desa</span>
+            <strong class="desa-name">Pesudukuh</strong>
+          </div>
+        </div>
+        <nav class="menu">
+          <a href="dashboard.html" class="menu-item">
+            <div class="menu-icon"><i class="bi bi-speedometer2"></i></div>
+            <span class="menu-text">Dashboard</span>
+          </a>
+
+          <a href="ajukansurat.html" class="menu-item">
+            <div class="menu-icon"><i class="bi bi-file-earmark-plus"></i></div>
+            <span class="menu-text">Pengajuan Surat</span>
+          </a>
+
+          <a href="riwayat.html" class="menu-item">
+            <div class="menu-icon"><i class="bi bi-clock-history"></i></div>
+            <span class="menu-text">Riwayat</span>
+          </a>
+
+          <a href="profil.html" class="menu-item active">
+            <div class="menu-icon"><i class="bi bi-person-circle"></i></div>
+            <span class="menu-text">Profil Akun</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <a href="index.html" class="logout-link">
+            <div class="logout-content">
+              <i class="bi bi-box-arrow-right"></i>
+              <span class="logout-text">Keluar</span>
+            </div>
+          </a>
+        </div>
+      </aside>
+
+      <main class="profile-main">
+        <div class="profile-container">
+          <header class="content-header">
+            <div class="header-left">
+              <h1>Pengaturan Profil</h1>
+
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="dashboard.html">Dashboard</a>
+                  </li>
+                  <li class="breadcrumb-item active">Profil Akun</li>
+                </ol>
+              </nav>
+            </div>
+
+            <div class="header-right">
+              <div class="header-divider"></div>
+
+              <div class="user-profile-nav">
+                <img src="https://ui-avatars.com/api/?name=Nama+Lengkap&background=5c67f2&color=fff" alt="User" />
+                <div class="user-info">
+                  <span class="u-name">Nama Lengkap</span>
+                  <span class="u-role">Warga Desa</span>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <div class="profile-content-card">
+            <div class="profile-identity">
+              <div class="avatar-wrapper">
+                <div class="avatar-inner">
+                  <img src="https://ui-avatars.com/api/?name=Nama+Anda&background=5c67f2&color=fff&size=150" alt="User Avatar" id="profile-img" />
+                  <label for="upload" class="upload-badge" title="Ubah Foto">
+                    <i class="bi bi-camera-fill"></i>
+                  </label>
+                </div>
+                <input type="file" id="upload" hidden accept="image/*" />
+                <div class="avatar-actions">
+                  <button type="button" class="btn-text-delete">Hapus Foto</button>
+                </div>
+              </div>
+
+              <div class="identity-info">
+                <h2>Nama Lengkap</h2>
+                <div class="status-badge">
+                  <i class="bi bi-patch-check-fill"></i>
+                  <span>Penduduk Terverifikasi</span>
+                </div>
+              </div>
+            </div>
+
+            <form class="profile-form">
+              <div class="section-divider">
+                <span>Informasi Pribadi</span>
+              </div>
+
+              <div class="input-group-row">
+                <label class="label-box">Nama Lengkap</label>
+                <div class="field-box">
+                  <input type="text" value="Nama Lengkap" placeholder="Masukkan nama lengkap" />
+                  <i class="bi bi-pencil-square icon-edit"></i>
+                </div>
+              </div>
+
+              <div class="input-group-row locked">
+                <label class="label-box">NIK (Nomor Induk Kependudukan)</label>
+                <div class="field-box">
+                  <input type="text" value="3507123456789001" readonly />
+                  <i class="bi bi-lock-fill icon-lock"></i>
+                </div>
+              </div>
+
+              <div class="input-group-row">
+                <label class="label-box">Pekerjaan</label>
+                <div class="field-box">
+                  <input type="text" value="Wiraswasta" placeholder="Contoh: Pengusaha" />
+                  <i class="bi bi-pencil-square icon-edit"></i>
+                </div>
+              </div>
+
+              <div class="input-group-row">
+                <label class="label-box">Alamat Lengkap</label>
+                <div class="field-box">
+                  <textarea rows="3"> Desa Pesudukuh, Kec. Bagor, Kab. Nganjuk</textarea>
+                  <i class="bi bi-pencil-square icon-edit"></i>
+                </div>
+              </div>
+
+              <div class="section-divider">
+                <span>Keamanan Akun</span>
+              </div>
+
+              <div class="input-group-row">
+                <label class="label-box">Kata Sandi Baru</label>
+                <div class="field-box password-container">
+                  <input type="password" id="pass1" placeholder="Masukkan sandi baru" />
+                  <i class="bi bi-eye-slash toggle-icon" onclick="togglePassword('pass1', this)"></i>
+                </div>
+              </div>
+
+              <div class="input-group-row">
+                <label class="label-box">Konfirmasi Sandi</label>
+                <div class="field-box password-container">
+                  <input type="password" id="pass2" placeholder="Ulangi sandi baru" />
+                  <i class="bi bi-eye-slash toggle-icon" onclick="togglePassword('pass2', this)"></i>
+                </div>
+              </div>
+
+              <div class="security-card">
+                <div class="security-card-header">
+                  <i class="bi bi-shield-check"></i>
+                  <h4>Standar Keamanan Kata Sandi:</h4>
+                </div>
+                <div class="tips-list">
+                  <div class="tip-item"><i class="bi bi-check-circle-fill"></i> Minimal 8 Karakter</div>
+                  <div class="tip-item"><i class="bi bi-check-circle-fill"></i> Kombinasi Huruf & Angka</div>
+                  <div class="tip-item"><i class="bi bi-check-circle-fill"></i> Gunakan Simbol (!@#)</div>
+                  <div class="tip-item"><i class="bi bi-check-circle-fill"></i> Huruf Kapital</div>
+                </div>
+              </div>
+
+              <div class="form-footer">
+                <button type="button" class="btn-secondary">Batalkan</button>
+                <button type="submit" class="btn-primary">Simpan Perubahan</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <script>
+        function togglePassword(inputId, icon) {
+          const input = document.getElementById(inputId);
+          if (input.type === "password") {
+            input.type = "text";
+            icon.classList.replace("bi-eye-slash", "bi-eye");
+          } else {
+            input.type = "password";
+            icon.classList.replace("bi-eye", "bi-eye-slash");
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>

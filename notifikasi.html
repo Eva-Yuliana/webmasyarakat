@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notifikasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/css/notifikasi.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <img src="assets/img/logo.png" alt="Logo Desa Pesudukuh" class="logo-desa" />
+          <div class="header-text">
+            <span class="desa-title">Pemerintah Desa</span>
+            <strong class="desa-name">Pesudukuh</strong>
+          </div>
+        </div>
+        <nav class="menu">
+          <a href="dashboard.html" class="menu-item active">
+            <div class="menu-icon"><i class="bi bi-speedometer2"></i></div>
+            <span class="menu-text">Dashboard</span>
+          </a>
+
+          <a href="ajukansurat.html" class="menu-item">
+            <div class="menu-icon"><i class="bi bi-file-earmark-plus"></i></div>
+            <span class="menu-text">Pengajuan Surat</span>
+          </a>
+
+          <a href="riwayat.html" class="menu-item">
+            <div class="menu-icon"><i class="bi bi-clock-history"></i></div>
+            <span class="menu-text">Riwayat</span>
+          </a>
+
+          <a href="profil.html" class="menu-item">
+            <div class="menu-icon"><i class="bi bi-person-circle"></i></div>
+            <span class="menu-text">Profil Akun</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <a href="index.html" class="logout-link">
+            <div class="logout-content">
+              <i class="bi bi-box-arrow-right"></i>
+              <span class="logout-text">Keluar</span>
+            </div>
+          </a>
+        </div>
+      </aside>
+      <main class="notification-main">
+        <div class="notification-container">
+          <header class="content-header">
+            <div class="header-left">
+              <h1>Informasi & Notifikasi</h1>
+
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="dashboard.html">Dashboard</a>
+                  </li>
+                  <li class="breadcrumb-item active">Notifikasi</li>
+                </ol>
+              </nav>
+            </div>
+
+            <div class="header-right">
+              <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Cari notifikasi..." />
+              </div>
+
+              <div class="header-divider"></div>
+
+              <div class="user-profile-nav">
+                <img src="https://ui-avatars.com/api/?name=Nama+Lengkap&background=5c67f2&color=fff" alt="User" />
+                <div class="user-info">
+                  <span class="u-name">Nama Lengkap</span>
+                  <span class="u-role">Warga Desa</span>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <div class="notif-filter">
+            <button class="filter-item active">Semua</button>
+            <button class="filter-item">Belum Dibaca</button>
+          </div>
+
+          <div class="notif-list-card">
+            <div class="notif-item unread">
+              <div class="notif-icon icon-success">
+                <i class="bi bi-file-earmark-check"></i>
+              </div>
+              <div class="notif-content">
+                <div class="notif-text"><strong>Admin Desa</strong> menyetujui pengajuan <strong>SKTM</strong> Anda.</div>
+                <span class="notif-time">2 menit yang lalu</span>
+              </div>
+              <div class="notif-status-dot"></div>
+            </div>
+
+            <div class="notif-item">
+              <div class="notif-icon icon-warning">
+                <i class="bi bi-exclamation-triangle"></i>
+              </div>
+              <div class="notif-content">
+                <div class="notif-text"><strong>Syarat Foto KTP</strong> belum lengkap atau buram untuk pengajuan <strong>SK Usaha</strong>. Harap unggah ulang.</div>
+                <span class="notif-time">1 jam yang lalu</span>
+              </div>
+            </div>
+
+            <div class="notif-item">
+              <div class="notif-icon icon-info">
+                <i class="bi bi-info-circle"></i>
+              </div>
+              <div class="notif-content">
+                <div class="notif-text">Kantor Desa Pesudukuh akan tutup sementara pada tanggal <strong>1 Februari 2026</strong> sehubungan dengan hari libur nasional.</div>
+                <span class="notif-time">Kemarin, 14:20</span>
+              </div>
+            </div>
+
+            <div class="notif-item">
+              <div class="notif-icon icon-primary">
+                <i class="bi bi-megaphone"></i>
+              </div>
+              <div class="notif-content">
+                <div class="notif-text">Selamat! Akun Anda telah berhasil diverifikasi sebagai <strong>Penduduk Terverifikasi</strong>.</div>
+                <span class="notif-time">24 Jan 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

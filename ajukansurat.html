@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal Layanan Desa Mandiri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/css/user/ajukansurat.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <img src="assets/img/logo.png" alt="Logo Desa Pesudukuh" class="logo-desa" />
+          <div class="header-text">
+            <span class="desa-title">Pemerintah Desa</span>
+            <strong class="desa-name">Pesudukuh</strong>
+          </div>
+        </div>
+        <nav class="menu">
+          <a href="dashboard.html" class="menu-item">
+            <div class="menu-icon"><i class="bi bi-speedometer2"></i></div>
+            <span class="menu-text">Dashboard</span>
+          </a>
+
+          <a href="ajukansurat.html" class="menu-item active">
+            <div class="menu-icon"><i class="bi bi-file-earmark-plus"></i></div>
+            <span class="menu-text">Pengajuan Surat</span>
+          </a>
+
+          <a href="riwayat.html" class="menu-item">
+            <div class="menu-icon"><i class="bi bi-clock-history"></i></div>
+            <span class="menu-text">Riwayat</span>
+          </a>
+
+          <a href="profil.html" class="menu-item">
+            <div class="menu-icon"><i class="bi bi-person-circle"></i></div>
+            <span class="menu-text">Profil Akun</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <a href="index.html" class="logout-link">
+            <div class="logout-content">
+              <i class="bi bi-box-arrow-right"></i>
+              <span class="logout-text">Keluar</span>
+            </div>
+          </a>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="content-header">
+          <div class="header-left">
+            <h1>Layanan Administrasi</h1>
+
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item active">Pengajuan Surat</li>
+              </ol>
+            </nav>
+          </div>
+
+          <div class="header-right">
+            <div class="search-box">
+              <i class="bi bi-search"></i>
+              <input type="text" placeholder="Cari jenis surat..." />
+            </div>
+
+            <div class="header-divider"></div>
+
+            <div class="user-profile-nav">
+              <img src="https://ui-avatars.com/api/?name=Sara+Abraham&background=5c67f2&color=fff" alt="User" />
+              <div class="user-info">
+                <span class="u-name">Nama Lengkap</span>
+                <span class="u-role">Warga Desa</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- GRID CARD -->
+        <section class="surat-grid">
+          <!-- CARD -->
+          <div class="surat-card">
+            <div class="surat-thumb">
+              <img src="assets/img/surat/BEDA NAMA.jpg" />
+            </div>
+            <div class="surat-content">
+              <h3>Surat Keterangan Beda Nama</h3>
+              <p>Surat keterangan resmi dari pemerintah desa yang menerangkan adanya perbedaan penulisan nama pada dokumen kependudukan atau administrasi lainnya.</p>
+              <div class="surat-actions">
+                <a href="bedanama.html" class="btn-surat btn-create">
+                  <i class="bi bi-file-earmark-plus"></i>
+                  Buat Pengajuan
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="surat-card">
+            <div class="surat-thumb">
+              <img src="assets/img/surat/BELUM PERNAH NIKAH.jpg" />
+            </div>
+            <div class="surat-content">
+              <h3>Surat Keterangan Belum Menikah</h3>
+              <p>Surat resmi dari pemerintah desa yang menyatakan status perkawinan warga yang belum pernah menikah untuk keperluan administrasi tertentu.</p>
+              <div class="surat-actions">
+                <a href="belummenikah.html" class="btn-surat btn-create">
+                  <i class="bi bi-file-earmark-plus"></i>
+                  Buat Pengajuan
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="surat-card">
+            <div class="surat-thumb">
+              <img src="assets/img/surat/KELAHIRAN.jpg" />
+            </div>
+            <div class="surat-content">
+              <h3>Surat Keterangan Kelahiran</h3>
+              <p>Surat keterangan resmi dari desa yang memuat informasi mengenai peristiwa kelahiran seseorang sebelum diterbitkannya akta kelahiran.</p>
+              <div class="surat-actions">
+                <a href="kelahiran.html" class="btn-surat btn-create">
+                  <i class="bi bi-file-earmark-plus"></i>
+                  Buat Pengajuan
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="surat-card">
+            <div class="surat-thumb">
+              <img src="assets/img/surat/KEMATIAN1.jpg" />
+            </div>
+            <div class="surat-content">
+              <h3>Surat Keterangan Kematian</h3>
+              <p>Surat resmi dari pemerintah desa yang menerangkan peristiwa kematian warga untuk keperluan administrasi kependudukan.</p>
+              <div class="surat-actions">
+                <a href="kematian.html" class="btn-surat btn-create">
+                  <i class="bi bi-file-earmark-plus"></i>
+                  Buat Pengajuan
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="surat-card">
+            <div class="surat-thumb">
+              <img src="assets/img/surat/KETERANGAN PENGHASILAN.jpg" />
+            </div>
+            <div class="surat-content">
+              <h3>Surat Keterangan Penghasilan</h3>
+              <p>Surat keterangan dari pemerintah desa yang berisi informasi mengenai penghasilan warga sebagai pendukung administrasi dan persyaratan tertentu.</p>
+              <div class="surat-actions">
+                <a href="penghasilan.html" class="btn-surat btn-create">
+                  <i class="bi bi-file-earmark-plus"></i>
+                  Buat Pengajuan
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="surat-card">
+            <div class="surat-thumb">
+              <img src="assets/img/surat/KETERANGAN USAHA.jpg" />
+            </div>
+            <div class="surat-content">
+              <h3>Surat Keterangan Usaha</h3>
+              <p>Surat keterangan resmi dari desa yang menyatakan keberadaan dan jenis usaha warga sebagai bentuk legalitas usaha.</p>
+              <div class="surat-actions">
+                <a href="ketusaha.html" class="btn-surat btn-create">
+                  <i class="bi bi-file-earmark-plus"></i>
+                  Buat Pengajuan
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="surat-card">
+            <div class="surat-thumb">
+              <img src="assets/img/surat/PEMBELIAN SOLAR.jpg" />
+            </div>
+            <div class="surat-content">
+              <h3>Surat Pembelian Solar</h3>
+              <p>Surat rekomendasi dari pemerintah desa yang menerangkan izin atau kebutuhan pembelian bahan bakar minyak jenis solar sesuai ketentuan.</p>
+              <div class="surat-actions">
+                <a href="pembeliansolar.html" class="btn-surat btn-create">
+                  <i class="bi bi-file-earmark-plus"></i>
+                  Buat Pengajuan
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="surat-card">
+            <div class="surat-thumb">
+              <img src="assets/img/surat/PENDUDUK.jpg" />
+            </div>
+            <div class="surat-content">
+              <h3>Surat Keterangan Penduduk</h3>
+              <p>Surat keterangan resmi dari desa yang menyatakan bahwa seseorang tercatat sebagai penduduk dan berdomisili di wilayah desa setempat.</p>
+              <div class="surat-actions">
+                <a href="penduduk.html" class="btn-surat btn-create">
+                  <i class="bi bi-file-earmark-plus"></i>
+                  Buat Pengajuan
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="surat-card">
+            <div class="surat-thumb">
+              <img src="assets/img/surat/SKCK.jpg" />
+            </div>
+            <div class="surat-content">
+              <h3>Surat Pengantar SKCK</h3>
+              <p>Surat pengantar resmi dari pemerintah desa yang diberikan sebagai persyaratan administrasi dalam pengurusan SKCK di kepolisian.</p>
+              <div class="surat-actions">
+                <a href="pengantar skck.html" class="btn-surat btn-create">
+                  <i class="bi bi-file-earmark-plus"></i>
+                  Buat Pengajuan
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="surat-card">
+            <div class="surat-thumb">
+              <img src="assets/img/surat/SKTM.jpg" />
+            </div>
+            <div class="surat-content">
+              <h3>Surat Keterangan Tidak Mampu</h3>
+              <p>Surat keterangan resmi dari pemerintah desa yang menerangkan kondisi ekonomi warga sebagai dasar pengajuan bantuan sosial atau pendidikan.</p>
+              <div class="surat-actions">
+                <a href="sktm.html" class="btn-surat btn-create">
+                  <i class="bi bi-file-earmark-plus"></i>
+                  Buat Pengajuan
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="surat-card">
+            <div class="surat-thumb">
+              <img src="assets/img/surat/SURAT IZIN.jpg" />
+            </div>
+            <div class="surat-content">
+              <h3>Surat Keterangan Izin Tidak Masuk Kerja</h3>
+              <p>Surat resmi dari pemerintah desa yang menerangkan izin tidak masuk kerja berdasarkan keterangan dan permohonan yang diajukan.</p>
+              <div class="surat-actions">
+                <a href="izinkerja.html" class="btn-surat btn-create">
+                  <i class="bi bi-file-earmark-plus"></i>
+                  Buat Pengajuan
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surat Pembelian Solar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/css/surat.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <img src="assets/img/logo.png" alt="Logo Desa Pesudukuh" class="logo-desa" />
+          <div class="header-text">
+            <span class="desa-title">Pemerintah Desa</span>
+            <strong class="desa-name">Pesudukuh</strong>
+          </div>
+        </div>
+        <nav class="menu">
+          <a href="dashboard.html" class="menu-item">
+            <div class="menu-icon"><i class="bi bi-speedometer2"></i></div>
+            <span class="menu-text">Dashboard</span>
+          </a>
+
+          <a href="ajukansurat.html" class="menu-item active">
+            <div class="menu-icon"><i class="bi bi-file-earmark-plus"></i></div>
+            <span class="menu-text">Pengajuan Surat</span>
+          </a>
+
+          <a href="riwayat.html" class="menu-item">
+            <div class="menu-icon"><i class="bi bi-clock-history"></i></div>
+            <span class="menu-text">Riwayat</span>
+          </a>
+
+          <a href="profil.html" class="menu-item">
+            <div class="menu-icon"><i class="bi bi-person-circle"></i></div>
+            <span class="menu-text">Profil Akun</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <a href="index.html" class="logout-link">
+            <div class="logout-content">
+              <i class="bi bi-box-arrow-right"></i>
+              <span class="logout-text">Keluar</span>
+            </div>
+          </a>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="main form-page">
+        <!-- FORM CARD -->
+        <section class="form-card">
+          <!-- FORM HEADER -->
+          <div class="form-header">
+            <h2>
+              <i class="bi bi-file-earmark-text"></i>
+              Form Pengisian Data Surat Pembelian Solar
+            </h2>
+
+            <a href="ajukansurat.html" class="btn-back"> <i class="bi bi-arrow-left"></i> Kembali </a>
+          </div>
+
+          <!-- FORM BODY -->
+          <form class="form-body">
+            <!-- DATA PEMOHON -->
+            <div class="form-section">
+              <div class="section-title">
+                <i class="bi bi-person"></i>
+                Data Pemohon
+              </div>
+
+              <div class="form-grid three">
+                <div class="form-group">
+                  <label><i class="bi bi-credit-card-2-front"></i> NIK</label>
+                  <input type="text" placeholder="Masukkan NIK" />
+                </div>
+
+                <div class="form-group">
+                  <label><i class="bi bi-person-badge"></i> Nama Lengkap</label>
+                  <input type="text" placeholder="Nama lengkap" />
+                </div>
+
+                <div class="form-group">
+                  <label><i class="bi bi-telephone"></i> No. Telp</label>
+                  <input type="text" placeholder="Nomor telepon aktif" />
+                </div>
+              </div>
+            </div>
+
+            <!-- FORM SURAT REKOMENDASI PEMBELIAN BBM -->
+            <div class="form-section">
+              <div class="section-title">
+                <i class="bi bi-fuel-pump"></i>
+                Form Surat Rekomendasi Pembelian BBM (Solar)
+              </div>
+
+              <div class="form-section split">
+                <!-- ================= KOLOM KIRI ================= -->
+                <div class="form-column">
+                  <div class="form-group">
+                    <label>Nama Pemohon</label>
+                    <input type="text" placeholder="Nama lengkap pemohon" />
+                  </div>
+
+                  <div class="form-group">
+                    <label>NIK</label>
+                    <input type="text" placeholder="Nomor Induk Kependudukan (16 digit)" />
+                  </div>
+
+                  <div class="form-group">
+                    <label>Alamat Usaha</label>
+                    <textarea placeholder="Alamat usaha"></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Konsumen Pengguna</label>
+                    <select>
+                      <option value="" disabled selected hidden>Pilih konsumen pengguna</option>
+                      <option>Usaha Mikro</option>
+                      <option>Perikanan</option>
+                      <option>Pertanian</option>
+                      <option>Transportasi</option>
+                      <option>Pelayanan Umum</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Jenis Usaha / Kegiatan</label>
+                    <input type="text" placeholder="Contoh: Pertanian" />
+                  </div>
+                </div>
+
+                <!-- ================= KOLOM KANAN ================= -->
+                <div class="form-column">
+                  <div class="form-group">
+                    <label>Jenis Alat</label>
+                    <input type="text" placeholder="Contoh: Diesel" />
+                  </div>
+
+                  <div class="form-group">
+                    <label>Jumlah Alat</label>
+                    <input type="number" placeholder="Jumlah alat" />
+                  </div>
+
+                  <div class="form-group">
+                    <label>Fungsi Alat</label>
+                    <input type="text" placeholder="Contoh: Pertanian" />
+                  </div>
+
+                  <div class="form-group">
+                    <label>Jenis BBM Tertentu</label>
+                    <input type="text" value="Solar" readonly />
+                  </div>
+
+                  <div class="form-group">
+                    <label>Jam / Hari Operasi</label>
+                    <input type="text" placeholder="Contoh: 06.00 - 17.00" />
+                  </div>
+
+                  <div class="form-group">
+                    <label>Konsumsi BBM (Liter / hari-minggu-bulan)</label>
+                    <input type="text" placeholder="Contoh: 20 Liter / hari" />
+                  </div>
+                </div>
+
+                <!-- ================= FULL WIDTH ================= -->
+                <div style="grid-column: 1 / -1">
+                  <div class="form-group">
+                    <label>Alokasi Volume BBM (Liter)</label>
+                    <input type="text" placeholder="Contoh: 600 Liter / bulan" />
+                  </div>
+
+                  <div class="form-group">
+                    <label>Tempat Pengambilan BBM</label>
+                    <select>
+                      <option value="" disabled selected hidden>Pilih lembaga penyalur</option>
+                      <option>SPBU</option>
+                      <option>SPBB</option>
+                      <option>APMS</option>
+                      <option>SPBUN</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Nomor Lembaga Penyalur</label>
+                    <input type="text" placeholder="Contoh: 54.644.22" />
+                  </div>
+
+                  <div class="form-group">
+                    <label>Lokasi Penyalur</label>
+                    <input type="text" placeholder="Contoh: Ds. Sekarputih" />
+                  </div>
+
+                  <div class="form-group">
+                    <label>Masa Berlaku Surat Rekomendasi</label>
+                    <input type="date" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- BUTTON SIMPAN -->
+            <button type="submit" class="btn-save"><i class="bi bi-save"></i> Simpan</button>
+            <div class="form-divider"></div>
+
+            <!-- ACTION FOOTER -->
+            <div class="form-footer">
+              <button type="button" class="btn-cancel" onclick="history.back()"><i class="bi bi-x-circle"></i> Batal</button>
+
+              <div class="right">
+                <button type="button" class="btn-preview"><i class="bi bi-eye"></i> Preview</button>
+                <button type="button" class="btn-print"><i class="bi bi-printer"></i> Cetak</button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
