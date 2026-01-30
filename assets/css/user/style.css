@@ -1,5 +1,5 @@
 :root {
-  --primary: #5c67f2;
+  --primary: #0766f4;
   --bg-light: #edf0f8;
   --white: #ffffff;
   --text-dark: #2d3436;
@@ -257,7 +257,7 @@ body {
 
 /* HERO BANNER */
 .hero-banner {
-  background: #5c67f2;
+  background: #0766f4;
   border-radius: 30px;
   padding: 40px;
   display: flex;

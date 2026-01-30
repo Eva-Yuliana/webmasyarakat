@@ -1,6 +1,5 @@
 :root {
-  --primary: #5c67f2;
-  --primary-hover: #4a54d1;
+  --primary: #0766f4;
   --bg-main: #edf0f8;
   --text-dark: #2d3748;
   --text-muted: #718096;
@@ -381,7 +380,7 @@ body {
 
 .upload-badge:hover {
   transform: scale(1.1);
-  background: var(--primary-hover);
+  background: var(--primary);
 }
 
 .btn-text-delete {
@@ -594,7 +593,7 @@ body {
 }
 
 .btn-primary:hover {
-  background: var(--primary-hover);
+  background: var(--primary);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(92, 103, 242, 0.4);
 }

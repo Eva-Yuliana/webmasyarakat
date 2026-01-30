@@ -1,5 +1,5 @@
 :root {
-  --primary: #5c67f2;
+  --primary: #0766f4;
   --bg-light: #e7edfe;
   --white: #ffffff;
   --text-dark: #2d3436;
@@ -421,20 +421,9 @@ body {
   transition: 0.25s ease;
 }
 
-/* Lihat Surat */
-.btn-preview {
-  background: #f1f3ff;
-  color: #4e73df;
-  border: 1px solid #dbe3ff;
-}
-
-.btn-preview:hover {
-  background: #e2e8ff;
-}
-
 /* Buat Surat */
 .btn-create {
-  background: linear-gradient(135deg, #4e73df, #224abe);
+  background: linear-gradient(135deg, #0766f4, #224abe);
   color: #fff;
 }
 

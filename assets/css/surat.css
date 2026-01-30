@@ -1,5 +1,5 @@
 :root {
-  --primary: #5c67f2;
+  --primary: #0766f4;
   --bg-light: #e7edfe;
   --white: #ffffff;
   --text-dark: #2d3436;
@@ -300,7 +300,7 @@ body {
   /* INI KUNCINYA */
   margin: -14px -18px 25px -18px;
 
-  border-left: 5px solid #ffffff;
+  border-left: 5px solid var(--primary);
 }
 
 .section-title i {
