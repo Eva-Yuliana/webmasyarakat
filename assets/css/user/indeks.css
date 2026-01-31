@@ -1227,6 +1227,7 @@ section,
 
 .about-btn:hover {
   transform: translateY(-3px);
+  color: #ffffff;
   box-shadow: 0 18px 40px rgba(30, 144, 255, 0.45);
 }
 
@@ -2209,3 +2210,4 @@ section,
     font-size: 14px;
   }
 }
+
